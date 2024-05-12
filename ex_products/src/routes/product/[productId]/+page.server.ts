@@ -1,8 +1,9 @@
-import { fail, error, redirect } from '@sveltejs/kit';
-import type { Actions, PageServerLoad } from './$types';
+import { error, redirect } from '@sveltejs/kit';
+import type { PageServerLoad } from '../$types';
+
 
 export const load = (async (loadServerEvent) => {
-    const { fetch, params, url, route } = loadServerEvent;
+    const { fetch, params } = loadServerEvent;
     const { productId } = params;
 
     // console.log('url ', url);

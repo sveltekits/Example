@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { goto, invalidateAll, preloadData, preloadCode } from '$app/navigation';
-	import type { PageServerData } from './$types';
 	import type { Tproduct } from '$lib/types';
 
-	export let data: TProduct;
+	// import type { PageServerData } from './$types';
+	// export let data: PageServerData;
+	export let data: Tproduct;
 
 	const refresh = (): void => {
 		// invalidate($page.url.href);
